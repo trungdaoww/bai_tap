@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Administrator"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-10 08:51:20 PM"/>
+        <attribute name="created" value="QWRtaW5pc3RyYXRvcjs5TFRFQ1RYNjhTWERYN0M7MjAxOS0wMy0xMDswODozNDoxNyBQTTszNzQ0"/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjs5TFRFQ1RYNjhTWERYN0M7MjAxOS0wMy0xMDswODo1MToyMCBQTTszOzM4NDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Real" array="False" size=""/>
+            <declare name="b" type="Real" array="False" size=""/>
+            <declare name="c" type="Real" array="False" size=""/>
+            <declare name="x1" type="Real" array="False" size=""/>
+            <declare name="x2" type="Real" array="False" size=""/>
+            <declare name="d" type="Real" array="False" size=""/>
+            <output expression="&quot;Vao a,b,c: &quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <if expression="a==0">
+                <then>
+                    <output expression="&quot;Ph&#432;&#417;ng tr&#236;nh b&#7853;c nh&#7845;t&quot;" newline="True"/>
+                    <breakpoint/>
+                </then>
+                <else>
+                    <output expression="&quot;Ph&#432;&#417;ng tr&#236;nh b&#7853;c hai&quot;" newline="True"/>
+                    <assign variable="d" expression="b^2 - 4*a*c"/>
+                    <if expression="d&gt;=0">
+                        <then>
+                            <if expression="d = 0">
+                                <then>
+                                    <output expression="&quot;Ph&#432;&#417;ng tr&#236;nh c&#243; nghi&#7879;m k&#233;p x1 = x2 &quot;" newline="True"/>
+                                    <assign variable="x1" expression="-b/(2*a)"/>
+                                    <output expression="x1" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Ph&#432;&#417;ng tr&#236;nh c&#243; hai nghi&#7879;m ph&#226;n bi&#7879;t&quot;" newline="True"/>
+                                    <assign variable="x1" expression="(-b-sqrt(d))/(2*a)"/>
+                                    <assign variable="x2" expression="(-b+sqrt(d))/(2*a)"/>
+                                    <output expression="x1" newline="True"/>
+                                    <output expression="x2" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;Ph&#432;&#417;ng tr&#236;nh kh&#244;ng c&#243; nghi&#7879;m th&#7921;c&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
