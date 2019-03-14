@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Administrator"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-10 04:54:02 PM"/>
+        <attribute name="created" value="QWRtaW5pc3RyYXRvcjs5TFRFQ1RYNjhTWERYN0M7MjAxOS0wMy0xMDswNDo0NzoyOSBQTTszNzQ3"/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjs5TFRFQ1RYNjhTWERYN0M7MjAxOS0wMy0xMDswNDo1NDowMiBQTTsxOzM4NDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Gi&#7843;i ph&#432;&#417;ng tr&#236;nh b&#7853;c nh&#7845;t a*x + b = 0"/>
+            <declare name="a" type="Real" array="False" size=""/>
+            <declare name="b" type="Real" array="False" size=""/>
+            <declare name="x" type="Real" array="False" size=""/>
+            <output expression="&quot;Nh&#7853;p v&#224;o a va b&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <if expression="a==0">
+                <then>
+                    <if expression="b==0">
+                        <then>
+                            <output expression="&quot;Ph&#432;&#417;ng trinh co v&#244; s&#7889; nghi&#7879;m&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot; Ph&#432;&#417;ng tr&#236;nh v&#244; nghi&#7879;m&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <assign variable="x" expression="-b/a"/>
+                    <output expression="&quot;Ph&#432;&#417;ng tr&#236;nh c&#243; nghi&#7879;m duy nh&#7845;t x = &quot;&amp;x" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
