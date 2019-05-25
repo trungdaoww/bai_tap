@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Administrator"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-14 07:53:01 PM"/>
+        <attribute name="created" value="QWRtaW5pc3RyYXRvcjs5TFRFQ1RYNjhTWERYN0M7MjAxOS0wNS0xNDswNzo0NzoxMiBQTTszNzQ4"/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjs5TFRFQ1RYNjhTWERYN0M7MjAxOS0wNS0xNDswNzo1MzowMSBQTTsxOzM4NTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="chcao" type="Real" array="False" size=""/>
+            <declare name="cday" type="Real" array="False" size=""/>
+            <declare name="dientich" type="Real" array="False" size=""/>
+            <output expression="&quot;Nh&#7853;p v&#224;o chi&#7873;u cao v&#224; c&#7841;nh &#273;&#225;y t&#432;&#417;ng &#7913;ng: &quot;" newline="True"/>
+            <input variable="chcao"/>
+            <input variable="cday"/>
+            <assign variable="dientich" expression="1/2*chcao*cday"/>
+            <output expression="&quot; Di&#7879;n t&#237;ch tam gi&#225;c l&#224;: &quot;&amp;dientich" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
